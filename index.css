@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 575px;
+    height: 385px;
+    background-color: #1B244A;
+}
+
+/* white headers */
+h3 {
+  color: #EEEEEE;
+  font-family: Verdana;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+/* score blocks */
+.score {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 155px;
+  height: 120px;
+  left: 82px;
+  top: 125px;
+  border-radius: 5px;
+  background-color: #080001;
+}
+
+/* points-text RED */
+.points-text {
+  width: 117px;
+  height: 120px;
+  left: 100px;
+  top: 125px;
+
+  font-family: 'Cursed Timer ULiL';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 127px;
+  /* or 141% */
+  text-align: center;
+  color: #F94F6D;
+}
+
+/* add-points-btns-area */
+.add-points-btns-home {
+  width: 155px;
+  height: 45px;
+  left: 82px;
+  top: 271px;
+  margin-top: 26px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* plus-points */
+button {
+  width: 45px;
+  height: 45px;
+  left: 82px;
+  top: 271px;
+  border: 2px solid #9AABD8;
+  border-radius: 5px;
+  background-color: #1B244A;
+
+  font-family: 'Cursed Timer ULiL';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 155% */
+  text-align: center;
+  color: #9AABD8;
+}
