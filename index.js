@@ -1,8 +1,8 @@
 let homeScore = document.getElementById('home-score')
 let guestScore = document.getElementById('guest-score')
 
-let countHome = 0
-let countGuest = 0
+let countHome = countGuest = 0
+homeScore.textContent = guestScore.textContent = 0
 
 function plusOneHome() {
   countHome += 1
@@ -30,6 +30,26 @@ function plusTwoGuest() {
 }
 
 function plusThreeGuest() {
-  countGuest += 3
+  countGuest -= 1
   guestScore.textContent = countGuest
+}
+
+function highScore() {
+  if (countHome > countGuest) {
+    homeScore.style.color = "#66ff00"
+    guestScore.style.color = "#F94F6D"
+  }
+  else if (countHome < countGuest) {
+    guestScore.style.color = "#66ff00"
+    homeScore.style.color = "#F94F6D"
+  }
+  else {
+    homeScore.style.color = guestScore.style.color = "#66ff00"
+  }
+}
+
+function reset() {
+  countHome = countGuest = 0
+  guestScore.textContent = homeScore.textContent = 0
+  homeScore.style.color = guestScore.style.color = "#F94F6D"
 }

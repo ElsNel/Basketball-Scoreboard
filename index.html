@@ -9,29 +9,34 @@
             <div>
                 <h3>HOME</h3>
                 <div class="score">
-                  <p class="points-text" id="home-score">0</p>
+                  <p class="points-text" id="home-score"></p>
                 </div>
                 <div class="add-points-btns-home">
                   <span class="button-container">
-                    <button onclick="plusOneHome()">+1</button>
-                    <button onclick="plusTwoHome()">+2</button>
-                    <button onclick="plusThreeHome()">+3</button>
+                    <button onclick="plusOneHome();highScore()">+1</button>
+                    <button onclick="plusTwoHome();highScore()">+2</button>
+                    <button onclick="plusThreeHome();highScore()">+3</button>
                   </span>
                 </div>
             </div>
             <div>
                 <h3>GUEST</h3>
                 <div class="score">
-                  <p class="points-text" id="guest-score">0</p>
+                  <p class="points-text" id="guest-score"></p>
                 </div>
                 <div class="add-points-btns-home">
                   <span class="button-container">
-                    <button onclick="plusOneGuest()">+1</button>
-                    <button onclick="plusTwoGuest()">+2</button>
-                    <button onclick="plusThreeGuest()">+3</button>
+                    <button onclick="plusOneGuest();highScore()">+1</button>
+                    <button onclick="plusTwoGuest();highScore()">+2</button>
+                    <button onclick="plusThreeGuest();highScore()">+3</button>
                   </span>
                 </div>
             </div>
+        </div>
+        <div class="container-bottom">
+          <div>
+            <button class="reset" onclick="reset()">NEW GAME</button>
+          </div>
         </div>
         <script src="index.js"></script>
     </body>
